@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@electric-sql/pglite':
+        specifier: ^0.3.8
+        version: 0.3.8
+
+packages:
+
+  '@electric-sql/pglite@0.3.8':
+    resolution: {integrity: sha512-VlAz/R7mktifp9IHzNvjxWJM8p3fPH2lHpustYuRSOXOpXiAMTlA5qqxcufPaDnfee6CZCE9qrT1MHDT7riSHg==}
+
+snapshots:
+
+  '@electric-sql/pglite@0.3.8': {}
