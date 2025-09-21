@@ -1,1 +1,1 @@
-SELECT * FROM cars;
+SELECT model, year, price FROM cars;
