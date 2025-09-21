@@ -1,4 +1,5 @@
 import { PGlite } from "@electric-sql/pglite"
+import fs from "fs"
 
 const db = new PGlite()
 
@@ -57,6 +58,9 @@ await db.exec(`
           ('Bentley', 'T2', 1978, 52000, 'silver', 4, false);
   `)
 
-const cars = await db.query("SELECT * FROM cars")
+
+const query = fs.readFileSync("query.sql", "utf-8")
+
+const cars = await db.query(query)
 
 console.table(cars.rows)
