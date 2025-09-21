@@ -13,7 +13,7 @@ await db.exec(`
     condition INTEGER,
     sold BOOLEAN
   );
-    INSERT INTO cars (brand, model, price, year, color, condition, sold) VALUES
+    INSERT INTO cars (brand, model, year, price, color, condition, sold) VALUES
     ('Ford', 'Mustang', 1965, 45000, 'white', 4, false),
           ('Chevrolet', 'Camaro', 1970, 48000, 'red', 2, false),
           ('Dodge', 'Charger', 1969, 58000, 'black', 4, true),
