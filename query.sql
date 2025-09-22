@@ -1,9 +1,11 @@
 /*
-	Select brand, model, condition, color and price from cars
-		where the price is between $20,000 and $60,000
-		and the condition is between 1 and 3
-		and the color contains red
+	Search for columns: brand, model, color, year, price, sold
+		from the table cars
+		where the color is a shade of red
+		or the year is between 1960 and 1969
+		and sold is false
 */
 
-SELECT brand, model, price, condition, color FROM cars
-	WHERE price BETWEEN 20000 AND 60000;
+SELECT brand, model, price, color, sold, year FROM cars
+	WHERE color LIKE '%red%' OR year BETWEEN 1960 AND 1969;
+    AND sold IS false;
