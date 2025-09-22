@@ -1,9 +1,9 @@
 /*
-    Get cars that condition is equal or greater than 3
-    and year is before 1970
-    Select model, year, price and condition from cars table
+	Select brand, model, condition, color and price from cars
+		where the price is between $20,000 and $60,000
+		and the condition is between 1 and 3
+		and the color contains red
 */
 
-SELECT brand, model, price, color FROM cars
-	WHERE condition >= 3 
-    AND year < 1970;
+SELECT brand, model, price, condition, color FROM cars
+	WHERE price BETWEEN 20000 AND 60000;
